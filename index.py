@@ -4,19 +4,22 @@ from slithering import Snake, Lizard, Gecko, Worm, Skink
 
 
 def display_animal(animal):
-    print(f"This {animal.species} is named {animal.name}, and they came here on {animal.date_added}")
+    if hasattr(animal, "shift"):
+        print(f"{animal.name} the {animal.species} is available to play during the {animal.shift} shift, and came here on {animal.date_added}")
+    else:
+        print(f"{animal.name} the {animal.species} is available all day, and came here on {animal.date_added}")
 
 
 # Creating instances for each class
-miss_fuzz = Llama("Miss Fuzz", "domestic llama")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
 
-billy = Goat("Billy", "domestic goat")
+billy = Goat("Billy", "domestic goat", "midday")
 
-dolly = Sheep("Dolly", "domestic sheep")
+dolly = Sheep("Dolly", "domestic sheep", "night")
 
-porky = Pig("Porky", "domestic pig")
+porky = Pig("Porky", "domestic pig", "morning")
 
-spirit = Horse("Spirit", "domestic horse")
+spirit = Horse("Spirit", "domestic horse", "midday")
 
 slither = Snake("Slither", "garden snake")
 
