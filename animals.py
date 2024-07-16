@@ -1,169 +1,142 @@
 # import the python datetime module to help us create a timestamp
 from datetime import date
 
+def display_animal(animal):
+    print(f"{animal.name} is a {animal.species}, and they came here on {animal.date_added}")
+
 class Llama:
-    def __init__(self):
-        self.name = ""
-        self.species = "Llama"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.walking = True
         self.date_added = date.today()
 
 class Goat:
-    def __init__(self):
-        self.name = ""
-        self.species = "Goat"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.walking = True
         self.date_added = date.today()
 
 class Sheep:
-    def __init__(self):
-        self.name = ""
-        self.species = "Sheep"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.walking = True
         self.date_added = date.today()
 
 class Pig:
-    def __init__(self):
-        self.name = ""
-        self.species = "Pig"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.walking = True
         self.date_added = date.today()
 
 class Horse:
-    def __init__(self):
-        self.name = ""
-        self.species = "Horse"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.walking = True
         self.date_added = date.today()
 
 class Snake:
-    def __init__(self):
-        self.name = ""
-        self.species = "Snake"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.slithering = True
         self.date_added = date.today()
 
 class Lizard:
-    def __init__(self):
-        self.name = ""
-        self.species = "Lizard"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.slithering = True
         self.date_added = date.today()
 
 class Gecko:
-    def __init__(self):
-        self.name = ""
-        self.species = "Gecko"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.slithering = True
         self.date_added = date.today()
 
 class Worm:
-    def __init__(self):
-        self.name = ""
-        self.species = "Worm"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.slithering = True
         self.date_added = date.today()
 
 class Skink:
-    def __init__(self):
-        self.name = ""
-        self.species = "Skink"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.slithering = True
         self.date_added = date.today()
 
 class Fish:
-    def __init__(self):
-        self.name = ""
-        self.species = "Fish"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.swimming = True
         self.date_added = date.today()
 
 class Turtle:
-    def __init__(self):
-        self.name = ""
-        self.species = "Turtle"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.swimming = True
         self.date_added = date.today()
 
 class Frog:
-    def __init__(self):
-        self.name = ""
-        self.species = "Frog"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.swimming = True
         self.date_added = date.today()
 
 class Starfish:
-    def __init__(self):
-        self.name = ""
-        self.species = "Starfish"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.swimming = True
         self.date_added = date.today()
 
 class Eel:
-    def __init__(self):
-        self.name = ""
-        self.species = "Eel"
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
         self.swimming = True
         self.date_added = date.today()
 
 
 # Creating instances for each class
-miss_fuzz = Llama()
-miss_fuzz.name = "Miss Fuzz"
-miss_fuzz.species = "domestic llama"
+miss_fuzz = Llama("Miss Fuzz", "domestic llama")
 
-billy = Goat()
-billy.name = "Billy"
-billy.species = "domestic goat"
+billy = Goat("Billy", "domestic goat")
 
-dolly = Sheep()
-dolly.name = "Dolly"
-dolly.species = "domestic sheep"
+dolly = Sheep("Dolly", "domestic sheep")
 
-porky = Pig()
-porky.name = "Porky"
-porky.species = "domestic pig"
+porky = Pig("Porky", "domestic pig")
 
-spirit = Horse()
-spirit.name = "Spirit"
-spirit.species = "domestic horse"
+spirit = Horse("Spirit", "domestic horse")
 
-slither = Snake()
-slither.name = "Slither"
-slither.species = "garden snake"
+slither = Snake("Slither", "garden snake")
 
-lizzy = Lizard()
-lizzy.name = "Lizzy"
-lizzy.species = "gecko lizard"
+lizzy = Lizard("Lizzy", "gecko lizard")
 
-george = Gecko()
-george.name = "George"
-george.species = "leopard gecko"
+george = Gecko("George", "leopard gecko")
 
-wiggles = Worm()
-wiggles.name = "Wiggles"
-wiggles.species = "earthworm"
+wiggles = Worm("Wiggles", "earthworm")
 
-skittles = Skink()
-skittles.name = "Skittles"
-skittles.species = "blue-tongued skink"
+skittles = Skink("Skittles", "blue-tongued skink")
 
-nemo = Fish()
-nemo.name = "Nemo"
-nemo.species = "clownfish"
+nemo = Fish("Nemo", "clownfish")
 
-shelly = Turtle()
-shelly.name = "Shelly"
-shelly.species = "sea turtle"
+shelly = Turtle("Shelly", "sea turtle")
 
-hoppy = Frog()
-hoppy.name = "Hoppy"
-hoppy.species = "tree frog"
+hoppy = Frog("Hoppy", "tree frog")
 
-patrick = Starfish()
-patrick.name = "Patrick"
-patrick.species = "common starfish"
+patrick = Starfish("Patrick", "common starfish")
 
-electric = Eel()
-electric.name = "Electric"
-electric.species = "electric eel"
+electric = Eel("Electric", "electric eel")
