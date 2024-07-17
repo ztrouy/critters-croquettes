@@ -11,36 +11,37 @@ def display_animal(animal):
 
 
 # Creating instances for each class
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
 
-billy = Goat("Billy", "domestic goat", "midday")
+billy = Goat("Billy", "domestic goat", "midday", "Goat Chow")
 
-dolly = Sheep("Dolly", "domestic sheep", "night")
+dolly = Sheep("Dolly", "domestic sheep", "night", "Sheep Chow")
 
-porky = Pig("Porky", "domestic pig", "morning")
+porky = Pig("Porky", "domestic pig", "morning", "Pig Chow")
 
-spirit = Horse("Spirit", "domestic horse", "midday")
+spirit = Horse("Spirit", "domestic horse", "midday", "Horse Chow")
 
-slither = Snake("Slither", "garden snake")
+slither = Snake("Slither", "garden snake", "Snake Chow")
 
-lizzy = Lizard("Lizzy", "gecko lizard")
+lizzy = Lizard("Lizzy", "gecko lizard", "Lizard Chow")
 
-george = Gecko("George", "leopard gecko")
+george = Gecko("George", "leopard gecko", "Gecko Chow")
 
-wiggles = Worm("Wiggles", "earthworm")
+wiggles = Worm("Wiggles", "earthworm", "Worm Chow")
 
-skittles = Skink("Skittles", "blue-tongued skink")
+skittles = Skink("Skittles", "blue-tongued skink", "Skink Chow")
 
-nemo = Fish("Nemo", "clownfish")
+nemo = Fish("Nemo", "clownfish", "Fish Chow")
 
-shelly = Turtle("Shelly", "sea turtle")
+shelly = Turtle("Shelly", "sea turtle", "Turtle Chow")
 
-hoppy = Frog("Hoppy", "tree frog")
+hoppy = Frog("Hoppy", "tree frog", "Frog Chow")
 
-patrick = Starfish("Patrick", "common starfish")
+patrick = Starfish("Patrick", "common starfish", "Starfish Chow")
 
-electric = Eel("Electric", "electric eel")
+electric = Eel("Electric", "electric eel", "Eel Chow")
 
+# Display all initial animals
 display_animal(miss_fuzz)
 display_animal(billy)
 display_animal(dolly)
@@ -56,3 +57,20 @@ display_animal(shelly)
 display_animal(hoppy)
 display_animal(patrick)
 display_animal(electric)
+
+# Feed all initial animals
+miss_fuzz.feed()
+billy.feed()
+dolly.feed()
+porky.feed()
+spirit.feed()
+slither.feed()
+lizzy.feed()
+george.feed()
+wiggles.feed()
+skittles.feed()
+nemo.feed()
+shelly.feed()
+hoppy.feed()
+patrick.feed()
+electric.feed()
